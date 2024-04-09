@@ -16,9 +16,9 @@ const MenuPublico = () => {
                                 <NavLink className="nav-link active" aria-current="page" exact="true" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link active" aria-current="page" 
-                                exact="true" to="/login">Login</NavLink>
-                            </li>                            
+                                <NavLink className="nav-link active" aria-current="page"
+                                    exact="true" to="/login">Login</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

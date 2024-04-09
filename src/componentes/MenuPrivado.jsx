@@ -31,20 +31,20 @@ const MenuPrivado = () => {
                             }
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    { usuario ? "Usuário: " + usuario.nome : "Usuário"}
+                                    {usuario ? "Usuário: " + usuario.nome : "Usuário"}
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
                                         {
                                             usuario ?
-                                            <NavLink className="dropdown-item" exact="true"
-                                            onClick={()=> logout()}
-                                             to="/">Logout</NavLink>
-                                            :
-                                            <NavLink className="dropdown-item" exact="true" 
-                                            to="/login">Login</NavLink>
+                                                <NavLink className="dropdown-item" exact="true"
+                                                    onClick={() => logout()}
+                                                    to="/">Logout</NavLink>
+                                                :
+                                                <NavLink className="dropdown-item" exact="true"
+                                                    to="/login">Login</NavLink>
                                         }
-                                    </li>                                   
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
